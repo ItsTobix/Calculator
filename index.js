@@ -6,9 +6,15 @@ const {app, BrowserWindow, Menu} = electron;
 
 let mainWindow;
 
+
+//Listen for the app to be ready
 app.on("ready", function (){
 
-    mainWindow = new BrowserWindow({});
+    mainWindow = new BrowserWindow({width: 1920, hight: 1080});
+
+    //Hide menu
+    mainWindow.setMenu(null);
+
 
     mainWindow.loadURL(url.format({
         pathname: path.join(__dirname, 'mainWindow.html'),
@@ -16,26 +22,8 @@ app.on("ready", function (){
         slashes: true
     }));
 
-  //  const mainMenu = Menu.buildFromTemplate(mainMenuTemplate);
 
-
-  //  Menu.setApplicationMenu(mainMenu);
 
 
 });
 
-
-/*
-
-const mainMenuTemplate = [{
-
-
-    label: "File"
-
-
-
-
-}];
-
-
-*/
