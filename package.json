@@ -1,0 +1,18 @@
+{
+  "name": "calculator",
+  "version": "0.0.0",
+  "description": "Online Calculator",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ItsTobix/Calculator.git"
+  },
+  "author": "Tobix",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^2.0.0"
+  }
+}
